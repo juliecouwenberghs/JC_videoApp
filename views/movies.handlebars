@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/stylesheets/main.css">
+
+<a href="/">Home</a>
+
+<h1>Hello Parent Viewer</h1>
+
+<ul>
+  {{#each userDetails}}
+    <li>
+	<img src="../images/movies/{{movies_picture}}">
+      <!-- <a href="">{{movies_title}}</a> -->
+       <a class="movieTitles" href="/movies/{{ movies_id }}" id="{{ movies_id }}">{{ movies_title }}</a>
+    </li>
+  {{/each}}
+</ul>

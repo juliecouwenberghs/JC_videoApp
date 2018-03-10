@@ -1,0 +1,13 @@
+<div id="parentMovies">
+    {{#each singleData}}
+    <div class="movieThumb" id="{{movies_id}}">
+      <video controls class="mainVideo" src="videos/{{movie_trailer}}" alt="{{movie_title}}" poster="images/{{movies_picture}}"></video>
+      <div id="mainText">
+        <h2 id="mainTitle">{{movies_title}}</h2>
+        <p id="year">{{movies_date}}</p>
+        <p id="rating">{{movies_rating}}</p>
+        <p id="desc">{{movie_desc}}</p>
+      </div>
+      <img id="movieCover" src="images/{{movies_picture}}" alt="{{movies_title}}">
+    </div>
+  </div>

@@ -1,0 +1,128 @@
+body {
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+#logo {
+  font: 40px "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #f3f3f3;
+}
+
+a{
+  text-decoration: none;
+}
+
+.parentMoviesContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 530px;
+  margin-bottom: 200px;
+  height: auto;
+}
+.parentMoviesFilter{
+  text-align: center;
+}
+#parentsIntro{
+  font-size: 2.4em;
+  color: #76caca;
+}
+
+.filterOption{
+  display: inline-block;
+  margin: 5px 30px;
+  font-size: 1.5em;
+  color: white;
+  background-color: #76caca;
+  border-radius: 20px;
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+.filterOption:hover{
+  background-color: #e2534b;
+}
+
+#clearF{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #e2534b;
+}
+
+#clearF:hover{
+  color: #3f4646;
+}
+
+#Intro{
+  font-size: 2em;
+  color: #9664D1;
+}
+.Intro2{
+  font-size: 1.8em;
+  color: #75cacb;
+}
+
+.movieThumb{
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+.movieThumb h2{
+  font-size: 1.3em;
+}
+
+.secF {
+  display: inline-block;
+  margin: 5px 15px;
+  font-size: 1.3em;
+  color: white;
+  background-color: #76caca;
+  border-radius: 10px;
+  width: 110px;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+
+.secF:hover{
+  background-color: #e2534b;
+}
+
+.intro2{
+  height: 500px;
+  width: 100%;
+  background-image: url("/images/kids_image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -15px;
+  position: absolute;
+}
+
+#introText2{
+  color: white;
+  background-color: #e2534b;
+  text-align: center;
+  padding: 10px;
+  width: 325px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 35%;
+  left: 13%;
+  font-weight: bold;
+}
+
+#secondintroText2{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 29%;
+  font-size: 1.4em;
+}
+
+#secondaryFilters{
+  margin-top: 10px;
+}

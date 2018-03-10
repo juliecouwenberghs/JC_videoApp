@@ -1,0 +1,59 @@
+<a href="/">
+  <i class="fa-fa-home"></i>
+</a>
+<header id="mainHeader">
+  <h1 id="logo">{{ title }}</h1>
+</header>
+<div class="intro3">
+    <h1 id="introText">{{message}}</h1>
+    <p id="secondintroText">Check out what's new below</p>
+</div>
+<div class="parentMoviesContainer">
+  <div class="parentMoviesFilter">
+    <section id="filter">
+      <p id="parentsIntro">What are you looking for today?</p>
+      <p id="clearF">Clear Filter</p>
+      <h2 class="hidden">Filter</h2>
+      <div class="filterOption" id="filter1"><p>Movies</p></div>
+      <div class="filterOption" id="filter2"><p>Television</p></div>
+      <div class="filterOption" id="filter3"><p>Music</p></div>
+      <div class="filterOption" id="filter4"><p>Favourites</p></div>
+    </section>
+    <section id="secondaryFilters">
+      <h2 class="hidden"> Secondary Filter</h2>
+      <div class="movieFilter hidden">
+        <p class="Intro2">What Kind of Movies?</p>
+        <div class="secF" id="action">Action</div>
+        <div class="secF" id="comedy">Comedy</div>
+        <div class="secF" id="drama">Drama</div>
+        <div class="secF" id="horror">Horror</div>
+        <div class="secF" id="thriller">Thriller</div>
+      </div>
+      <div class="tvFilter hidden">
+        <p class="Intro2">What Kind of Shows?</p>
+        <div class="secF" id="tvF1">Sitcom</div>
+        <div class="secF" id="tvF2">Horror</div>
+        <div class="secF" id="tvF3">Comedy</div>
+        <div class="secF" id="tvF4">Sci-Fi</div>
+      </div>
+      <div class="musicFilter hidden">
+        <p class="Intro2">What Kind of Music?</p>
+        <div class="secF" id="musF1">Pop</div>
+        <div class="secF" id="musF2">Jazz</div>
+        <div class="secF" id="musF3">Rock</div>
+      </div>
+    </section>
+  </div>
+
+  <div id="movies">
+    {{#each movieData}}
+    <a class="movieLink" href="/watch/{{movie_id}}" id="{{movie_id}}">
+      <div class="movieThumb">
+        <img src="images/{{movie_thumbnail}}" alt="{{movie_title}}">
+        <h3>{{movie_title}}</h3>
+      </div>
+    </a>
+    {{/each}}
+  </div>
+
+</div>
